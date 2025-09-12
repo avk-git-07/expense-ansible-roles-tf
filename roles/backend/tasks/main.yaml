@@ -45,8 +45,8 @@
 - name: import mysql data
   community.mysql.mysql_db:
     login_user: root
-    login_password: "{{ lookup('env', 'DB_PASS') }}"
-    login_host: "{{ lookup('env', 'DB_HOST') }}"
+    login_password: "{{ mysql_root_password }}"
+    login_host: "{{ login_host }}"
     target: /app/schema/backend.sql
     name: all
     state: import
