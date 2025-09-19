@@ -44,8 +44,8 @@
 
 - name: import mysql data
   community.mysql.mysql_db:
-    login_user: avkmysql
-    login_password: "AnsiblePass1"
+    login_user: root
+    login_password: "ExpenseApp1"
     login_host: "{{ login_host }}"
     target: /app/schema/backend.sql
     name: all
