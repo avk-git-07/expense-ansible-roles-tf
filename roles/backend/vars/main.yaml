@@ -1,4 +1,4 @@
-mysql_root_password: ExpenseApp1
+mysql_root_password: AnsiblePass1
 app_location: /app
 component: backend
 
